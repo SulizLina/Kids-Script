@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="kidsScript.css">
+    <link rel="stylesheet" href="adminstyle.css">
+    <script src="darkMode.js" defer></script>
+  </head>
+
+  <body>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const startOfWeek = new Date();
+        startOfWeek.setDate(startOfWeek.getDate() - startOfWeek.getDay());
+        const formattedDate = startOfWeek.toLocaleDateString("en-US", {
+          weekday: "long",
+          day: "numeric",
+          month: "long"
+        });
+    
+        const weekStartDateElement = document.createElement("div");
+        weekStartDateElement.textContent = `week starting on ${formattedDate}`;
+        weekStartDateElement.classList.add("custom-text-color"); 
+        weekStartDateElement.style.textAlign = "center";
+        weekStartDateElement.style.marginBottom = "20px";
+    
+        document.querySelector("main").prepend(weekStartDateElement);
+      });
+    </script>
+    
+     <section class="Header"> 
+      <header>
+        
+        <nav>
+          <a href="index.html"
+            ><img src="images/kidsScriptLOGO.png" alt="Logo"
+          /></a>
+          <div class="nav-links" id="navLinks">
+           
+            <ul>
+              <li><a href="index.html" accesskey="h">Home</a></li>
+              <li><a href="Parentdashboard.html" accesskey="p">Parent</a></li>
+              <li><a href="Tutor.html" accesskey="t">Tutor</a></li>           
+              <li> 
+                <a href="Administratordashboard.html" accesskey="a">Adminstrator</a>
+              </li>
+              <li><a href="Courses.html" accesskey="c">Courses</a></li>
+           
+              
+           </ul>
+             
+          
+          </div>
+ 
+        </nav>
+      </section>
+
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span> / </span>
+      <a href="Administratordashboard.html">Administrator Dashboard</a>
+    </div>
+    <main>
+      <h1>Administrator Dashboard</h1>
+
+      <!-- A list of all children names who are registered in the learning centre -->
+      <div class="section-title">
+        <h2>Registered kids</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+      <ul class="children">
+        <li>
+          <div class="children-card">
+            <img src="images/Kid1.png" alt="Emma Johnson">
+            <h2 class="child-name">Emma Johnson</h2>
+            <p><a href="mailto:Johnson'sFamily@gmail.com">Johnson&apos;sFamily@gmail.com</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="children-card">
+            <img src="images/Kid2.png" alt="Liam Johnson">
+            <h2 class="child-name">Liam Johnson</h2>
+            <p><a href="mailto:Johnson'sFamily@gmail.com">Johnson&apos;sFamily@gmail.com</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="children-card">
+            <img src="images/Kid3.png" alt="Olivia Johnson" >
+            <h2 class="child-name">Olivia Johnson</h2>
+            <p><a href="mailto:Johnson'sFamily@gmail.com">Johnson&apos;sFamily@gmail.com</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="children-card">
+            <img src="images/Kid4.png" alt="Noah Martinez">
+            <h2 class="child-name">Noah Martinez</h2>
+            <p><a href="mailto:Noah'sMother@gmail.com">Noah&apos;sMother@gmail.com</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="children-card">
+            <img src="images/Kid5.png" alt="Ava Wilson">
+            <h2 class="child-name">Ava Wilson</h2>
+            <p><a href="Ava'sMother@gmail.com">Ava&apos;sMother@gmail.com</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="children-card">
+            <img src="images/Kid6.png" alt="Ethan Davis">
+            <h2 class="child-name">Ethan Davis</h2>
+            <p><a href="mailto:Ethan'sMother@gmail.com">Ethan&apos;sMother@gmail.com</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="children-card">
+            <img src="images/Kid7.png" alt="Mia Patel">
+            <h2 class="child-name">Mia Patel</h2>
+            <p><a href="Mia'sMother@gmail.com">Mia&apos;sMother@gmail.com</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="children-card">
+            <img src="images/Kid8.png" alt="Sophia Rodriguez">
+            <h2 class="child-name">Sophia Rodriguez</h2>
+            <p><a href="Sophia'sMother@gmail.com">Sophia&apos;sMother@gmail.com</a></p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- courses section  -->
+      <div class="section-title">
+        <h2>Courses</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+      <ul class="courses">
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/HTML.png" alt="HTML Basics">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">HTML basics</h2>
+              <p class="card_text">Instructor: T. Lane Clark</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list">
+                <li>Emma Johnson</li>
+                <li>Sophia Rodriguez</li>
+                <li>Mia Patel</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/CSS.png" alt="Styling with CSS">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Styling with CSS</h2>
+              <p class="card_text">Instructor: T. Michael Turner</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list">
+                <li>Olivia Johnson</li>
+                <li>Ethan Davis</li>
+                <li>Mia Patel</li>
+                <li>Ava Wilson</li>
+                <li>Noah Martinez</li>
+              </ul>
+              <button class="btn card_btn" id="btn">More</button>
+              <span class="moreText"><ul>
+                <li>Emma Johnson</li>
+              </ul>
+               </span>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/JavaScript.png" alt="Introduction to JavaScript">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Introduction to JavaScript</h2>
+              <p class="card_text">Instructor: T. Emily Anderson</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list">
+                <li>Liam Johnson</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/Java.png" alt="Introduction to Java">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Introduction to Java</h2>
+              <p class="card_text">Instructor: T. Rachel Adam</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list">
+                <li>Sophia Rodriguez</li>
+                <li>Mia Patel</li>
+                <li>Olivia Johnson</li>
+                <li>Emma Johnson</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/Python.png" alt="Introduction to Python">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Introduction to Python</h2>
+              <p class="card_text">Instructor: T. Kevin Lee</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list" id="card_list">
+                <li>Ava Wilson</li>
+                <li>Liam Johnson</li>
+                <li>Mia Patel</li>
+                <li>Sophia Rodriguez</li>
+                <li>Emma Johnson</li>
+              </ul>
+              <button class="btn card_btn">More</button>
+              <span class="moreText"><ul>
+                <li>Olivia Johnson</li>
+              </ul>
+               </span>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/robotics.png" alt="Introduction to Robotics">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Introduction to Robotics</h2>
+              <p class="card_text">Instructor: T. Joe Adams</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list">
+                <li>Ava Wilson</li>
+                <li>Mia Patel</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/Scratch.png" alt="Introduction to Scratch">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Introduction to Scratch</h2>
+              <p class="card_text">Instructor: T. Daniel loe</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list">
+                <li>Sophia Rodriguez</li>
+                <li>Liam Johnson</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/SQL.png" alt="SQL basics">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">SQL basics</h2>
+              <p class="card_text">Instructor: Rohit Gupta</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list">
+                <li>Ethan Davis</li>
+                <li>Emma Johnson</li>
+                <li>Ava Wilson</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="images/Swift.png" alt="Introduction to Swift">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Introduction to Swift</h2>
+              <p class="card_text">Instructor: T. Lara Kevin</p>
+              <p class="card_text">
+                <strong> Students: </strong>
+              </p>
+              <ul class="card_list">
+                <li>Olivia Johnson</li>
+                <li>Emma Johnson</li>
+                <li>Mia Patel</li>
+                <li>Sophia Rodriguez</li>
+                <li>Noah Martinez</li>
+              </ul>
+              <button class="btn card_btn" id ="btn">More</button>
+              <span class="moreText"><ul>
+                <li>Ava Wilson</li>
+              </ul>
+               </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- A list of all teachers names who are registered in the learning centre -->
+      <div class="section-title">
+        <h2>Tutors</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+
+      <div class="Tutor-card">
+        <div class="Tutor-box">
+          <img src="images/LaneClark.png" alt="T. Lane Clark">
+          <a href="Schedule2.html" class="Tutor-name">T. Lane Clark </a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">HTML basics</li>
+          </ul>
+        </div>
+        <div class="Tutor-box">
+          <img src="images/RachelAdams.png" alt="T. Rachel Adam">
+          <a href="Schedule1.html" class="Tutor-name">T. Rachel Adam</a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">Introduction to java</li>
+          </ul>
+        </div>
+        <div class="Tutor-box">
+          <img src="images/KevinLee.png" alt="T. Kevin Lee">
+          <a href="Schedule2.html" class="Tutor-name">T. Kevin Lee</a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">Introduction to python</li>
+            <li class="Course-name">Introduction to Swift</li>
+            <li class="Course-name">HTML Basics</li>
+          </ul>
+        </div>
+        <div class="Tutor-box">
+          <img src="images/MichealTurner.png" alt="T. Michael Turner">
+          <a href="Schedule1.html" class="Tutor-name">T. Michael Turner</a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">Styling with CSS</li>
+          </ul>
+        </div>
+        <div class="Tutor-box">
+          <img src="images/JoeAdams.png" alt="" >
+          <a href="Schedule2.html" class="Tutor-name">T. Joe Adams</a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">Introduction to robotics</li>
+          </ul>
+        </div>
+        <div class="Tutor-box">
+          <img src="images/DanielLoe.png" alt="" >
+          <a href="Schedule1.html" class="Tutor-name">T.Daniel loe</a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">Programming with Scratch</li>
+          </ul>
+        </div>
+        <div class="Tutor-box">
+          <img src="images/EmilyAnderson.png" alt="" >
+          <a href="Schedule1.html" class="Tutor-name">T. Emily Anderson</a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">Introduction to JavaScript</li>
+            <li class="Course-name">Introduction to Scratch</li>
+            <li class="Course-name">Introduction to Robotics</li>
+          </ul>
+        </div>
+        <div class="Tutor-box">
+          <img src="images/JohnFoster.png" alt="">
+          <a href="Schedule2.html" class="Tutor-name">T. John Foster</a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">SQL basics</li>
+          </ul>
+        </div>
+
+        <div class="Tutor-box">
+          <img src="images/LaraKevin.png" alt="">
+          <a href="Schedule1.html" class="Tutor-name">T. Lara Kevin</a>
+          <p class="Course">Courses:</p>
+          <ul>
+            <li class="Course-name">Introduction to Swift</li>
+          </ul>
+        </div>
+      </div>
+      <script> 
+      document.addEventListener('DOMContentLoaded', function () {
+         var buttons = document.querySelectorAll('.card_btn');
+          buttons.forEach(function (button) {
+             button.addEventListener('click', function () { 
+              var moreText = this.closest('.card_content').querySelector('.moreText');
+              moreText.classList.toggle('moreText--show');
+            //Hide the button
+            if (moreText.classList.contains('moreText--show')){
+              this.style.display='none';
+            }else{
+              this.style.display='block'; 
+            }
+               }); 
+              }); 
+            });  
+      </script>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="main-footer">
+          <div class="Us">
+            <h2>Why Us?</h2>
+            <ul>
+              <li>Safe enviroment for kids</li>
+              <li>Interactive lerning courses</li>
+              <li>Well qulified instructers</li>
+              <li>Flexible scheduels</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h2>Contact Us</h2>
+            <ul>
+              <li>
+                <a href="mailto:KidsScript@gmail.com"
+                  ><img
+                    src="images/Email.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20"
+                  >KidsScript@gmail.com</a
+                >
+              </li>
+              <li>
+                <img
+                  src="images/phone.png"
+                  alt="instgram icon"
+                  width="20"
+                  height="20"
+                >+966555518694
+              </li>
+            </ul>
+          </div>
+          <div class="Social">
+            <h2>Social Media</h2>
+            <ul>
+              <li>
+                <a href="https://instgram.com"
+                  ><img
+                    src="images/instgram.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20"
+                  >
+                  KidsScript
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com"
+                  ><img
+                    src="images/X.png"
+                    alt="X icon"
+                    width="20"
+                    height="20"
+                  >
+                  KidsScript
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com"
+                  ><img
+                    src="images/Facebook.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20">
+                  KidsScript
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Copy right ©2023 made with
+          <img src="images/heart.png" alt="love" width="15" height="15"> in
+          KSU
+        </p>
+      </section>
+    </footer>
+    <script src="darkMode.js" defer></script>
+  </body>
+</html>
