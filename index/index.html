@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+     
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="StyleS.css" />
+
+    <link rel="stylesheet" href="Menustyles.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+ 
+    
+   
+  </head>
+  
+  <body>
+    <section class="Header"> 
+    <header>
+      
+      <nav>
+       
+        <a href="index.html"
+          ><img src="images/kidsScriptLOGO.png" alt="Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html" accesskey="h">Home</a></li>
+            <li><a href="Parentdashboard.html" accesskey="p">Parent</a></li>
+            <li><a href="Tutor.html" accesskey="t">Tutor</a></li>           
+            <li> 
+              <a href="Administratordashboard.html" accesskey="a">Adminstrator</a>
+            </li>
+            <li><a href="Courses.html" accesskey="c">Courses</a></li>
+       
+          </ul>
+        </div>
+        <img src="images/moon.png" id="icon" alt="trigger">
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+ <!--JavaScript for dark mode-->
+<!-- 
+ <script>
+  var icon = document. getElementById ("icon");
+  icon.onclick = function () {
+  document. body.classList. toggle ("dark-theme");
+  }
+ </script>
+ <script>
+  var icon = document. getElementById ("icon");
+  icon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+   icon.src = "images/sun.png"; 
+  }
+  else{
+  icon.src = "images/moon.png";
+  }
+}
+  </script>
+  -->
+    </section>
+      <div class="text-box">
+        <h1>Kids Script Vision</h1>
+  
+         
+        <p>
+          The Kids Script initiative aims to nurture the creativity and
+          innovation of young minds by providing captivating programs that
+          encourage coding skills. By empowering children with the necessary
+          tools, Kids Script prepares them to shape an unlimited future in the
+          era of digital technology.
+        </p>
+        <a href="RegisteraNewChild.html" class="hero-btn"
+          >Register In A Course</a
+        >
+      </div>
+    </header>
+
+    <!-----Java script for toggle menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  
+      <!--Common courses section-->
+      <div class="TitlesContainer">
+        <div class="Titles">
+          <h2>The most common courses</h2>
+        </div>
+      </div>
+      <div class="allTheCourses">
+        <div class="coursesRow1">
+          <!--Course1-->
+          <div class="CourseContainer">
+            <div class="coursePic">
+              <img src="images/robotics.png" alt="Robotics course" />
+            </div>
+            <div class="courseDetails">
+              <h4>Introduction to robotics</h4>
+              <p class="courseD-title">Course description</p>
+
+              <div class="courseD-text">
+                <p>
+                  It's a truly interdisciplinary space using AI, data science,
+                  coding, design, engineering, and more, to produce machines
+                  that replicate human actions in the real world. For children
+                  who enjoy building things, or playing with LEGOs, robotics is
+                  a great way to achieve similar results.
+                </p>
+              </div>
+            </div>
+            <div class="TutorInfo-course">
+              <img src="images/JoeAdams.png" alt="tutor photo" />
+              <p>T Joe Adams</p>
+            </div>
+            <div class="rate-course">
+              <p class="ratings">
+                Rate:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+          <!--END of course1-->
+          <!--Course2-->
+          <div class="CourseContainer">
+            <div class="coursePic">
+              <img src="images/Java.png" alt="Robotics course" />
+            </div>
+            <div class="courseDetails">
+              <h4>Introduction to Java</h4>
+              <p class="courseD-title">Course description</p>
+
+              <div class="courseD-text">
+                <p>
+                  Java is a great language for kids to learn because it has
+                  staying power. Java is the fifth most popular programming
+                  language in the world. It powers parts of YouTube, and Amazon.
+                  In addition, software engineers use Java to build Android apps
+                  and games.
+                </p>
+              </div>
+            </div>
+            <div class="TutorInfo-course">
+              <img src="images/RachelAdams.png" alt="T. Rachel Adam" />
+              <p>T. Rachel Adam</p>
+            </div>
+            <div class="rate-course">
+              <p class="ratings">
+                Rate:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+          <!--ND of course2-->
+          <!--Course3-->
+          <div class="CourseContainer">
+            <div class="coursePic">
+              <img src="images/scratch.png" alt="Scratch course" />
+            </div>
+            <div class="courseDetails">
+              <h4>Programming with Scratch</h4>
+              <p class="courseD-title">Course description</p>
+
+              <div class="courseD-text">
+                <p>
+                  Introduce your child to coding! Scratch is a kid-friendly
+                  coding language that's block-based and visual (like virtual
+                  LEGOs). Kids will learn coding and CS fundamentals while
+                  building games they can play and share with friends.
+                </p>
+              </div>
+            </div>
+            <div class="TutorInfo-course">
+              <img src="images/DanielLoe.png " alt="T. Daniel loe" />
+              <p>T. Daniel loe</p>
+            </div>
+            <div class="rate-course">
+              <p class="ratings">
+                Rate:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+            <!--END of course3-->
+          </div>
+        </div>
+        <!--End of the first row of the common  courses section-->
+
+        <!--Start of the second row of the most common courses sectin-->
+        <!--Course4-->
+        <div class="coursesRow2">
+          <div class="CourseContainer">
+            <div class="coursePic">
+              <img src="images/html.png" alt="html course" />
+            </div>
+            <div class="courseDetails">
+              <h4>HTML Basics</h4>
+              <p class="courseD-title">Course description</p>
+
+              <div class="courseD-text">
+                <p>
+                  Is a relatively easy programming language to learn used to
+                  create web pages. which makes it a great place for kids to
+                  start with coding in general or as another language to add to
+                  their repertoire.
+                </p>
+              </div>
+            </div>
+            <div class="TutorInfo-course">
+              <img src="images/LaneClark.png" alt=" T. Lane Clark" />
+              <p>T. Lane Clark</p>
+            </div>
+            <div class="rate-course">
+              <p class="ratings">
+                Rate:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </p>
+            </div>
+          </div>
+          <!--END of course4-->
+          <!--Course5-->
+          <div class="CourseContainer">
+            <div class="coursePic">
+              <img src="images/css.png" alt="CSS course" />
+            </div>
+            <div class="courseDetails">
+              <h4>Styling with CSS</h4>
+              <p class="courseD-title">Course description</p>
+
+              <div class="courseD-text">
+                <p>
+                  CSS is a subset of HTML that cannot function independently.
+                  CSS concerns itself with styling, which includes background,
+                  color, font, and animation, among others.
+                </p>
+              </div>
+            </div>
+            <div class="TutorInfo-course">
+              <img src="images/MichealTurner.png" alt="T. Michael Turner" />
+              <p>T. Michael Turner</p>
+            </div>
+            <div class="rate-course">
+              <p class="ratings">
+                Rate:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </p>
+            </div>
+          </div>
+          <!--END of course5-->
+          <!--Course6-->
+          <div class="CourseContainer">
+            <div class="coursePic">
+              <img src="images/javascript.png" alt="JavaScript course" />
+            </div>
+            <div class="courseDetails">
+              <h4>Introduction to javascript</h4>
+              <p class="courseD-title">Course description</p>
+
+              <div class="courseD-text">
+                <p>
+                  Draw colorful graphics in JavaScript, it's great way to
+                  explore computer programming. Working hand in hand with HTML
+                  and CSS. JS helps to enhance interactivity and the overall
+                  user experience.
+                </p>
+              </div>
+            </div>
+            <div class="TutorInfo-course">
+              <img src="images/EmilyAnderson.png" alt="T. Emily Anderson" />
+              <p>T. Emily Anderson</p>
+            </div>
+            <div class="rate-course">
+              <p class="ratings">
+                Rate:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </p>
+            </div>
+          </div>
+          <!--ND of course6-->
+        </div>
+        <!--End of the second row of the most common courses sectin-->
+      </div>
+      <!--End-Common courses section-->
+
+      <!--Parents reviews-->
+      <div class="TitlesContainer">
+        <div class="Titles">
+          <h2>Reviews</h2>
+        </div>
+      </div>
+      <div class="allTheReviews">
+        <!--Review 1-->
+        <div class="Container">
+          <div class="title">
+            <img src="images/ProfilePic.png.webp" alt="Martin Turner" />
+            <div class="info">
+              <h4 class="name">Martin</h4>
+              <p class="userName">@MartinTurner</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              My child has gained valuable skills in building and programming
+              robots. This course is a must for any parent looking to ignite
+              their child &apos;s interest in robotics.
+            </p>
+          </div>
+          <div class="courseInfo">
+            <p>Intoduction to robotics</p>
+          </div>
+
+          <div class="rate-course">
+            <p class="ratings">
+              Rate:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </p>
+          </div>
+        </div>
+
+        <!--Review 2-->
+        <div class="Container">
+          <div class="title">
+            <img src="images/ProfilePic.png.webp" alt="Emma" />
+            <div class="info">
+              <h4 class="name">Emma</h4>
+              <p class="userName">@Emma_92</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              Introduction to Java has been a fantastic course for my child. It
+              s engaging and teaches Java in a way that &apos;s easy for kids to
+              understand. My child has learned valuable skills and enjoys the
+              interactive lessons. I highly recommend it!
+            </p>
+          </div>
+          <div class="courseInfo">
+            <p>Introduction to Java</p>
+          </div>
+
+          <div class="rate-course">
+            <p class="ratings">
+              Rate:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </p>
+          </div>
+        </div>
+
+        <!--Review 3-->
+        <div class="Container">
+          <div class="title">
+            <img src="images/ProfilePic.png.webp" alt="profile picture" />
+            <div class="info">
+              <h4 class="name">Jane</h4>
+              <p class="userName">@JaneSmith</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              My child loved the Python course. It &apos;s engaging and
+              educational, and the instructors are great at making Python fun
+              for kids. I noticed a boost in our child &apos;s problem-solving
+              skills. It's a great course for young learners!
+            </p>
+          </div>
+          <div class="courseInfo">
+            <p>Introduction to python</p>
+          </div>
+
+          <div class="rate-course">
+            <p class="ratings">
+              Rate:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--End-Parents reviews-->
+    </main>
+    <!--Footer-->
+    <footer>
+      <section id="footer">
+        <div class="main-footer">
+          <div class="Us">
+            <h2>Why Us?</h2>
+            <ul>
+              <li>Safe enviroment for kids</li>
+              <li>Interactive lerning courses</li>
+              <li>Well qulified instructers</li>
+              <li>Flexible scheduels</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h2>Contact Us</h2>
+            <ul>
+              <li>
+                <a href="mailto:KidsScript@gmail.com"
+                  ><img
+                    src="images/Email.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20"
+                  />KidsScript@gmail.com</a
+                >
+              </li>
+              <li>
+                <img
+                  src="images/phone.png"
+                  alt="instgram icon"
+                  width="20"
+                  height="20"
+                />+966555518694
+              </li>
+            </ul>
+          </div>
+          <div class="Social">
+            <h2>Social Media</h2>
+            <ul>
+              <li>
+                <a href="https://instgram.com"
+                  ><img
+                    src="images/instgram.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20"
+                  />
+                  KidsScript
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com"
+                  ><img
+                    src="images/X.png"
+                    alt="X icon"
+                    width="20"
+                    height="20"
+                  />
+                  KidsScript
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com"
+                  ><img
+                    src="images/Facebook.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20"
+                  />
+                  KidsScript
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Copy right ©2023 made with
+          <img src="images/heart.png" alt="love" width="15" height="15" /> in
+          KSU
+        </p>
+      </section>
+    </footer>
+    <script src="darkMode.js" defer></script>
+  </body>
+</html>
