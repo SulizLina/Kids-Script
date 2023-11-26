@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function sortTutors() {
+        var tutorsContainer = document.querySelector('.AllTheTutors');
+        var tutors = Array.from(document.querySelectorAll('.card'));
+
+        var sortOrder = document.getElementById('sortOrder').value;
+
+        tutors.sort(function(a, b) {
+          var nameA = a.querySelector('.TutorName').textContent.toUpperCase();
+          var nameB = b.querySelector('.TutorName').textContent.toUpperCase();
+
+          if (sortOrder === 'asc') {
+            return nameA.localeCompare(nameB);
+          } else {
+            return nameB.localeCompare(nameA);
+          }
+        });
+
+        tutors.forEach(function(tutor) {
+          tutorsContainer.appendChild(tutor);
+        });
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="StyleS.css" />
+    <link rel="stylesheet" href="kidsScript.css" />
+    <script src="darkMode.js" defer></script>
+    <title>Tutor</title>
+  </head>
+  
+  <body>
+    <section class="Header"> 
+      <header>
+        
+        <nav>
+          <a href="index.html"
+            ><img src="images/kidsScriptLOGO.png" alt="Logo"
+          /></a>
+          <div class="nav-links" id="navLinks">
+           
+            <ul>
+              <li><a href="index.html" accesskey="h">Home</a></li>
+              <li><a href="Parentdashboard.html" accesskey="p">Parent</a></li>
+              <li><a href="Tutor.html" accesskey="t">Tutor</a></li>           
+              <li> 
+                <a href="Administratordashboard.html" accesskey="a">Adminstrator</a>
+              </li>
+              <li><a href="Courses.html" accesskey="c">Courses</a></li>
+           
+              
+           </ul>
+         
+          </div>
+ 
+        </nav>
+      </section>
+
+    <!--End of navigation bar -->
+
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span> / </span>
+      <a href="Tutor.html">Tutor</a>
+    </div>
+
+    <!--End-header-->
+    <main>
+      <div class="Titles">
+        <h2 class="Tut">Tutors</h2>
+        <label for="sortOrder">Sort by:</label>
+<select id="sortOrder" onchange="sortTutors()">
+  <option value="asc">A-Z</option>
+  <option value="desc">Z-A</option>
+</select>
+      </div>
+      <div class="AllTheTutors">
+        <!--Tutor card 1-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/LaneClark.png" alt="Lane Clark" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. Lane Clark</p>
+            <p class="TeachingField">HTML Basics</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              T.Lane holds a degree in Computer Science and has a passion for
+              making programming fun and engaging for kids. She has several
+              years of experience in teaching young learners the magic of HTML.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px; color:white;"></i>   LaneClarlk@gmail.com  </pre>
+          </div>
+        </div>
+        <!--End of card 1-->
+        <!--Tutor card 2-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/RachelAdams.png" alt="T. Rachel Adams" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. Rachel Adams</p>
+            <p class="TeachingField">Intoduction to java</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              T. Rachel is an experienced programmer and educator with a
+              background in Information Technology. She is on a mission to guide
+              kids through the exciting world of JAVA.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px"></i>   RachelAdams@gmail.com   </pre>
+          </div>
+        </div>
+        <!--End of card 2-->
+
+        <!--Tutor card 3-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/KevinLee.png" alt="T.Kevin Lee" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. Kevin Lee</p>
+            <p class="TeachingField">Intoduction to Python</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              T. Daniel, a highly skilled programming expert, paves the path in
+              his educational voyage. Possessing a strong foundation in coding
+              and a fervor for instructing, T. Daniel is your mentor in
+              exploring the complex realm of programming.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px"></i>   KevinLee@gmail.com   </pre>
+          </div>
+        </div>
+        <!--End of card 3-->
+
+        <!--Tutor card 4-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/MichealTurner.png" alt="T. Michael Turner" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. Michael Turner</p>
+            <p class="TeachingField">Styling with CSS</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              T. Michael is a web designer with a background in Graphic Design.
+              He is on a mission to teach kids the art of CSS and how it can
+              turn their creative ideas into beautiful web pages.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px"></i>   MichealTurnerk@gmail.com  </pre>
+          </div>
+        </div>
+        <!--End of card 4-->
+        <!--Tutor card 5-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/JoeAdams.png" alt="T. Joe Adams" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. Joe Adams</p>
+            <p class="TeachingField">Intoduction to robotics</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              Joe Adams, an expert with a strong background in robotics, is your
+              guide into the fascinating world of robotics in his Intoduction to
+              robotics course. With extensive experience, he will inspire kids!.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px"></i>   JoeAdamsk@gmail.com  </pre>
+          </div>
+        </div>
+        <!--End of card 5-->
+
+        <!--Tutor card 6-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/DanielLoe.png" alt="T. Daniel loe" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. Daniel loe</p>
+            <p class="TeachingField">Programming with Scratch</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              T. Daniel, an accomplished expert in programming, leads the way in
+              his educational journey. With a solid background in coding and a
+              passion for teaching, T. Daniel is the perfect guide to unraveling
+              the intricate world of programming.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px"></i>  DanLoe@gmail.com   </pre>
+          </div>
+        </div>
+
+        <!--End of card 6-->
+        <!--Tutor card 7-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/EmilyAnderson.png" alt="T. Emily Andersone" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. Emily Anderson</p>
+            <p class="TeachingField">Intoduction to JavaScript</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              T. Emily is a highly experienced educator who specializes in
+              teaching JavaScript. With a strong background in web development,
+              she is known for her engaging teaching style.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px"></i>   EmiltAnderson@gmail.com  </pre>
+          </div>
+        </div>
+        <!--End of card 7-->
+        <!--Tutor card 8-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/JohnFoster.png" alt="John Foster" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. John Foster</p>
+            <p class="TeachingField">SQL basics</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              John Mitchell is a dedicated instructor focusing on teaching the
+              fundamentals of SQL. With years of experience in database
+              management.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px"></i>   JohnFoster@gmail.com</pre>
+          </div>
+        </div>
+        <!--End of card 8-->
+
+        <!--Tutor card 9-->
+
+        <div class="card">
+          <div class="card_image">
+            <img src="images/LaraKevin.png" alt="T. Lara Kevin" />
+          </div>
+          <div class="card_content">
+            <p class="TutorName">T. Lara Kevin</p>
+            <p class="TeachingField">Introduction to Swift</p>
+          </div>
+          <div class="TutorDescription">
+            <p>
+              T. Lara Kevin is an accomplished tutor specializing in mobile app
+              development. With expertise in various programming languages and
+              app frameworks, she helps students create innovative mobile
+              applications.
+            </p>
+          </div>
+          <div class="EmailContainer">
+            <pre
+              class="Email"
+            >  <i class="fa fa-envelope" style="font-size:24px"></i>  LaraKevin@gmail.com</pre>
+          </div>
+        </div>
+        <!--End of card 9-->
+      </div>
+
+      <!--The code is in the ipad notes!!!-->
+      <!--End of outer div-->
+    </main>
+
+    <footer>
+      <section id="footer">
+        <div class="main-footer">
+          <div class="Us">
+            <h2>Why Us?</h2>
+            <ul>
+              <li>Safe enviroment for kids</li>
+              <li>Interactive lerning courses</li>
+              <li>Well qulified instructers</li>
+              <li>Flexible scheduels</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h2>Contact Us</h2>
+            <ul>
+              <li>
+                <a href="mailto:KidsScript@gmail.com"
+                  ><img
+                    src="images/Email.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20"
+                  />KidsScript@gmail.com</a
+                >
+              </li>
+              <li>
+                <img
+                  src="images/phone.png"
+                  alt="instgram icon"
+                  width="20"
+                  height="20"
+                />+966555518694
+              </li>
+            </ul>
+          </div>
+          <div class="Social">
+            <h2>Social Media</h2>
+            <ul>
+              <li>
+                <a href="https://instgram.com"
+                  ><img
+                    src="images/instgram.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20"
+                  />
+                  KidsScript
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com"
+                  ><img
+                    src="images/X.png"
+                    alt="X icon"
+                    width="20"
+                    height="20"
+                  />
+                  KidsScript
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com"
+                  ><img
+                    src="images/Facebook.png"
+                    alt="instgram icon"
+                    width="20"
+                    height="20"
+                  />
+                  KidsScript
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Copy right ©2023 made with
+          <img src="images/heart.png" alt="love" width="15" height="15" /> in
+          KSU
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
