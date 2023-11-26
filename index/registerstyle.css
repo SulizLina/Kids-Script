@@ -1,0 +1,91 @@
+.register h2 {
+  text-align: center;
+}
+
+:root {
+  --backG2: #9287e37a;
+  --background: #abacc9ad;
+  --blackToWhite: rgb(0, 0, 0);
+}
+
+.dark-theme {
+  --background: #050a1f; /*Background*/
+  --backG2: #8893bb45;
+  --blackToWhite: white;
+}
+body {
+  color: var(--blackToWhite);
+  background-color: var(--background);
+}
+#kidForm {
+  color: var(--blackToWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: var(--backG2);
+  padding: 20px;
+  border-radius: 20px;
+
+  margin-bottom: 5em;
+}
+
+#kidForm fieldset {
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#kidForm form .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.details .text input {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.button {
+  text-align: center;
+}
+
+form .button {
+  height: 2.5em;
+  width: 50%;
+  margin: 2em auto;
+}
+
+form .button input {
+  height: 100%;
+  width: 50%;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background-color: #565275;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+form .genderCategory {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
