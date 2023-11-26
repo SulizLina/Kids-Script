@@ -1,0 +1,119 @@
+body {
+  background-color: var(--color1);
+}
+
+:root {
+  --color1: #abacc9ad;
+  --color2ForSections: #9597c7ad;
+  --blackToWhite: black;
+  --blackToBlue: black;
+}
+.dark-theme {
+  --blackToBlue: #54608f;
+  --color1: #050a1f; /*Background*/
+  --color2ForSections: #4c4c6a;
+  --blackToWhite: rgb(245, 245, 245);
+}
+#section-3 a:visited {
+  color: var(--color2ForSections);
+}
+
+#section-3 a:hover {
+  color: var(--color2ForSections);
+}
+
+#section-3 a:link {
+  color: var(--color2ForSections);
+}
+
+.parent {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: var(--blackToWhite);
+  text-align: center;
+}
+
+#myKids {
+  background-color: var(--color2ForSections);
+  margin: auto;
+  width: 85%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.kidsPart {
+  color: red;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.kidblock {
+  background-color: white;
+  width: 35%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1% 5%;
+}
+
+.kidblock h2 {
+  color: var(--blackToBlue);
+  padding-top: 0.8em;
+  font-size: 1.5em;
+}
+
+.kidsPart img {
+  float: left;
+  width: 5em;
+  height: 5em;
+}
+
+#section-3 {
+  overflow: hidden;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-left: 1.6em;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+}
+
+.img-title {
+  display: block;
+  padding: 0.5em;
+  font-size: 100%;
+  color: var(--blackToWhite);
+}
+
+.column1 {
+  background-color: var(--color2ForSections);
+  width: 23%;
+  text-align: center;
+  float: left;
+  margin: auto 4.2%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 4.5px;
+}
+
+#section-3 h2 {
+  font-size: 1.3em;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
