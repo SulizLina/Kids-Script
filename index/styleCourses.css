@@ -1,0 +1,225 @@
+body {
+  background-color: var(--backGround1);
+}
+
+:root {
+  --backGround1: #9597c7ad;
+  --backG2: #9597c7ad;
+  --blackTosomecolor: black;
+  --whiteTolight: white;
+}
+
+.dark-theme {
+  --backG2: #313e7145;
+  --backGround1: #050a1f; /*Background*/
+  --blackTosomecolor: rgb(23, 27, 36);
+  --whiteTolight: rgb(220, 219, 228);
+}
+.all-courses-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backG2);
+  font-style: normal;
+  width: 80%;
+  border-radius: 43px;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+.courses-row {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.course-container {
+  width: 50%;
+  /* box-sizing: border-box; */
+  border-radius: 43px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* transition: 0.3s; */
+  background-color: var(--whiteTolight);
+  margin: 25px;
+  /* transition: all 10s ease; */
+  /* gap: 20px; */
+}
+
+.course-container img {
+  border-top-left-radius: 43px;
+  border-top-right-radius: 43px;
+}
+
+h2 {
+  color: var(--blackTosomecolor);
+  font-size: 19px;
+}
+
+.course-details {
+  padding: 10px;
+  /* margin: auto;*/
+}
+
+.courseD-title {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin: 5px 0;
+}
+
+.courseD-text {
+  margin: 5px 0;
+  color: #6b6a6a;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.checked {
+  color: orange;
+}
+
+.card-info {
+  height: 0;
+  overflow: hidden;
+}
+
+.course-container:hover .card-info {
+  height: auto;
+}
+
+.ratings {
+  padding: 15px 0;
+  margin: 0;
+}
+.ratings .text {
+  vertical-align: top;
+  font-size: 12px;
+}
+.ratings .fa {
+  font-size: 18px;
+}
+
+/* more info */
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.more-info p {
+  background: #ddd;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+#Scpre:hover::after {
+  content: ": None";
+}
+
+#Scobj:hover::after {
+  content: ": it promotes computational thinking and problem solving skills";
+}
+
+#Javapre:hover::after {
+  content: ": Introduction To HTML";
+}
+
+#javaobj:hover::after {
+  content: ": it provide programmers with one-time write and run, anywhere functionality.";
+}
+
+#Swiftpre:hover::after {
+  content: ": Introduction To Scratch";
+}
+
+#Swiftobj:hover::after {
+  content: ": learn how to write code more efficiently and with fewer errors.";
+}
+
+#Htmlpre:hover::after {
+  content: ": Introduction To Scratch";
+}
+
+#htmlobj:hover::after {
+  content: ": help to create Web pages and tells the browser how to display them.";
+}
+
+#csspre:hover::after {
+  content: ": Introduction To HTML";
+}
+
+#cssobj:hover::after {
+  content: ": Style and layout web pages";
+}
+
+#Scriptpre:hover::after {
+  content: ": Introduction To CSS";
+}
+
+#Scriptobj:hover::after {
+  content: ": Add dynamic and interactive elements to websites.";
+}
+
+#SQLpre:hover::after {
+  content: ": Introduction To Java";
+}
+
+#SQLobj:hover::after {
+  content: ": Create the database and relation structures. Also, perform insertion, modification, deletion of data from relations.";
+}
+
+#Pythonpre:hover::after {
+  content: ": None";
+}
+
+#Pythonobj:hover::after {
+  content: ": developing websites and software. Also, data visualisation.";
+}
+
+#Robotpre:hover::after {
+  content: ": None";
+}
+
+#Robotobj:hover::after {
+  content: ": Create intelligent machines that can assist humans in a variety of ways.";
+}
+
+/* card footer  */
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.tutor {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  font-size: 16px;
+}
+
+.tutor img {
+  margin: 0 10px 0 -25px;
+  height: 40px;
+  width: 40px;
+  border-radius: 45px;
+}
+
+.time-date {
+  float: right;
+  color: #000;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin: 5px 0;
+}
