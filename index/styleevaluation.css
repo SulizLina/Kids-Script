@@ -1,0 +1,80 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --backG2: #9287e37a;
+  --background: #9287e37a;
+  --blackToWhite: black;
+  --stars: #9187e3;
+}
+
+.dark-theme {
+  --background: #050a1f; /*Background*/
+  --backG2: #8893bb45;
+  --blackToWhite: white;
+  --stars: #ffffff;
+}
+div.evaluation {
+  background-color: var(--backG2);
+  margin: auto;
+  margin-bottom: 3em;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 20px;
+  width: 90%;
+}
+
+div {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8rem;
+  width: 95%;
+  padding: 1rem 2rem;
+  margin-right: 6rem;
+  margin-bottom: 2rem;
+}
+
+div.evaluationfeedback {
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  padding: 1rem 2rem;
+  margin-right: 6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--blackToWhite);
+  text-align: center;
+  font-size: xx-large;
+}
+
+h2 {
+  color: var(--blackToWhite);
+  text-align: center;
+  font-size: x-large;
+}
+
+.evaluation div select {
+  width: 200px;
+  font-size: large;
+  background-color: var(--background);
+  /* #9287e385;*/
+}
+
+body {
+  background-color: var(--background);
+}
+
+.item2 .fa-star.active {
+  color: var(--stars);
+}
