@@ -1,0 +1,39 @@
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+table {
+  text-align: center;
+  justify-content: center;
+  margin:auto;
+  margin-bottom: 8em;
+
+}
+
+table caption {
+  font-weight: bold;
+  justify-content: center;
+  line-height: 100px;
+  font-size: 2em;
+  text-align: left;
+}
+table,
+th,
+td {
+  border: 1px solid;
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+table tbody td {
+  border-style: solid;
+  border-width: 2px;
+  background-color: rgba(125, 193, 241, 0);
+  color: rgb(0, 0, 0);
+}
+
+
+body{
+  background-color: #abacc9ad;
+}
