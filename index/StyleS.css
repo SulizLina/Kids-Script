@@ -1,0 +1,606 @@
+/*Sara's section* (Home page & Tutor page) */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*---Titles size and style -----*/
+
+.TitlesContainer {
+  width: 44rem;
+
+  height: 5rem;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.Titles {
+  font-family: Inter;
+  color: var(--blactToWhite);
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 10rem;
+  margin-left: 3rem;
+}
+
+/*----------Vision Sectio---------- 
+.visionContainer {
+  display: flex;
+  align-items: center;
+}
+.Vision-text {
+  color: #3c2d48;
+  display: flex;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 70px;
+}
+
+.Vision-title {
+  margin-left: 30px;
+  font-size: 3rem;
+
+  font-weight: 600;
+  line-height: 8rem;
+}
+
+.vision-container {
+  display: flex;
+  align-items: center;
+}
+
+.vision-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.vision-image {
+  margin-top: 70px;
+  flex: 1;
+}
+.vision-image img {
+  height: 650px;
+}
+
+.Vision-title {
+  margin-bottom: 10px;
+}*/
+
+/*-------The reviews section ----------*/
+
+.allTheReviews {
+  position: relative;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+  filter: blur(50px);
+  border-radius: 30px;
+  filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
+  margin-bottom: 50px;
+}
+
+.allTheReviews::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  filter: blur(60px);
+  z-index: -1;
+}
+
+.Container {
+  background-color: #ffffff;
+  margin-right: 5rem;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  width: 320px;
+  height: 23rem;
+  border-radius: 2.6875rem;
+  user-select: none;
+  margin-top: 1rem;
+  filter: drop-shadow(0px 4px 9px #bebae7);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Container:hover {
+  transform: scale(1.05);
+}
+
+.Container:last-child {
+  margin-right: 0;
+}
+
+.title {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  width: 50px;
+  border-radius: 10rem;
+  border: 0.0625rem solid wheat;
+  margin-right: 1.2rem;
+}
+
+.info h4 {
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+}
+
+.info p {
+  font-size: 0.8rem;
+  color: gray;
+  line-height: 1.2rem;
+}
+
+.comment p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  height: 9rem;
+}
+
+.courseInfo {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.625rem;
+  height: 1.875rem;
+  border-radius: 20px;
+  background: #efeefb;
+}
+
+.rate {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.rate p {
+  font-size: 1.4rem;
+  font-weight: inherit;
+  margin-right: 1.9rem;
+}
+
+.rate .stars {
+  width: 10.5625rem;
+  height: 1.8125rem;
+  flex-shrink: 0;
+}
+
+/* The end of Reviews section */
+
+/* The beginning of "Most common courses" section */
+.allTheCourses {
+  position: relative;
+  border-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
+}
+
+.CourseContainer {
+  background: #fffefe;
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  height: 539px;
+  filter: drop-shadow(1px 6px 5px rgba(125, 125, 125, 0.25));
+  border-radius: 43px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.CourseContainer:hover {
+  transform: scale(1.05);
+}
+.coursesRow1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6rem;
+  column-gap: 5rem;
+  padding: 1rem 2rem;
+  margin-left: 80px;
+  margin-bottom: 2rem;
+}
+
+.coursesRow1 :last-child {
+  margin-right: 0;
+}
+
+.coursesRow2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6rem;
+  column-gap: 5rem;
+  padding: 1rem 2rem;
+  margin-left: 80px;
+  margin-left: 80px;
+}
+
+.coursesRow2 :last-child {
+  margin-right: 0;
+}
+
+.coursePic {
+  height: 275px;
+  width: auto;
+  overflow: hidden;
+  border-top-left-radius: 43px;
+  border-top-right-radius: 43px;
+}
+
+.coursePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.courseDetails {
+  padding: 10px;
+}
+
+.courseDetails h4 {
+  margin: 0;
+  color: #000;
+
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.courseD-title {
+  color: #000;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin: 5px 0;
+}
+
+.courseD-text {
+  margin: 5px 0;
+  color: #6b6a6a;
+
+  font-size: 0.7rem;
+
+  font-weight: 200;
+  line-height: normal;
+  height: 5rem;
+}
+
+.TutorInfo-course {
+  display: flex;
+}
+
+.TutorInfo-course img {
+  width: 30px;
+  border-radius: 10rem;
+  border: 0.0625rem wheat;
+  margin-right: 1rem;
+  margin-left: 0.9rem;
+}
+
+.TutorInfo-course {
+  color: #a1a1a1;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  align-items: center;
+}
+
+.rate-course {
+  margin-top: 1.2rem;
+  display: flex;
+}
+
+.rate-course p {
+  margin-left: 1.5rem;
+  font-size: 0.5rem;
+  margin-right: 1.3rem;
+  color: #000;
+
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-top: 0.3rem;
+}
+
+.rate .stars {
+  width: 10.5625rem;
+  height: 1.8125rem;
+  flex-shrink: 0;
+}
+/* The end of "Most common courses" section */
+
+/*----------------------Tutor's page------------------*/
+
+.TutorContainer {
+  display: inline-block;
+  width: 310px;
+  height: 340px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+.TutorPic {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 2px solid black;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 90px;
+  transform: translate(-50%, -50%);
+}
+.TutorDesc {
+  padding: 20px;
+}
+
+.TutorsName {
+  color: #000;
+  font-family: normal;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-top: 70px;
+}
+
+.TeachingTopics {
+  margin-left: 45px;
+  color: #747474;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 35px;
+}
+
+.EmailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.Email {
+  color: white;
+  background-color: #565275;
+  border-radius: 50%;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 15px;
+  width: 17rem;
+}
+
+.AllTheTutors {
+  width: 100%;
+  display: flex;
+
+  overflow-x: scroll;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.card {
+  width: 20em;
+  height: 29rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 2);
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card_image {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid rgb(141, 102, 161);
+
+  padding: 3px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TutorName {
+  font-size: 1.5rem;
+  line-height: 50px;
+  font-weight: 500;
+  position: relative;
+  top: 0.2em;
+}
+
+.TeachingField {
+  color: rgb(141, 102, 161);
+  font-weight: lighter;
+}
+.TutorDescription {
+  text-align: center;
+  font-size: 0.78rem;
+  margin-top: 1rem;
+}
+/*----*/
+.checked {
+  color: orange;
+}
+/*---------------*/
+
+@media only screen and (max-width: 600px) {
+  .Titles {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+  }
+
+  .Vision-text {
+    margin-left: 4px;
+    margin-top: 4px;
+    font-size: 0.8rem;
+  }
+  .Vision-title {
+    font-size: 1.5rem;
+  }
+
+  .vision-image {
+    margin-top: 70px;
+    flex: 1;
+  }
+  .vision-image img {
+    height: 350px;
+    margin-left: 0px;
+  }
+  .coursesRow1,
+  .coursesRow2 {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .CourseContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .coursePic img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .TutorInfo-course img {
+    margin-left: 0;
+  }
+  /*The reviews section*/
+  .allTheReviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0;
+    filter: none;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .Container {
+    width: 320px;
+    margin-bottom: 1.5rem;
+    margin-right: 1px;
+  }
+
+  .allTheReviews::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .coursesRow1,
+  .coursesRow2 {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .CourseContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .TutorInfo-course img {
+    margin-left: 0;
+  }
+
+  .Container {
+    width: 310px;
+    height: 400px;
+    margin-bottom: 1.5rem;
+    margin-right: 1px;
+    gap: 11px;
+  }
+
+  .allTheReviews::before {
+    display: none;
+  }
+  .courseInfo {
+    margin-top: 25px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.625rem;
+    height: 2rem;
+    border-radius: 20px;
+    background: #efeefb;
+  }
+}
+/*Dark mode */
+
+:root {
+  --primary-color: #abacc9ad; /*Background*/
+  --secondary-color: #000000;
+  --blactToWhite: black;
+  --secondary3-color: white;
+  --headerNav: rgb(0, 0, 0);
+  --backGimage: linear-gradient(rgba(4, 9, 30, 0), rgba(4, 9, 30)),
+    url(images/background.jpeg);
+  --footer: #2f2b53;
+}
+
+.dark-theme {
+  --blactToWhite: white;
+  --primary-color: #050a1f; /*Background*/
+  --secondary-color: rgb(0, 0, 0);
+  --headerNav: rgb(255, 255, 255);
+  --secondary3-color: #c0b7de;
+  --backGimage: linear-gradient(rgba(4, 9, 30, 0.568), rgba(4, 9, 30)),
+    url(images/background.jpeg);
+  --footer: #2f2b53;
+}
+
+ 
