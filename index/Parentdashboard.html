@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="utf-8"> 
+           <title>Parent dashboard</title> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+         
+             <link rel="stylesheet" href="parentstyle.css" >
+   <link rel="stylesheet" href="kidsScript.css"> 
+    </head>
+ <body>
+  <section class="Header"> 
+    <header>
+      
+      <nav>
+        <a href="index.html"
+          ><img src="images/kidsScriptLOGO.png" alt="Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+         
+          <ul>
+            <li><a href="index.html" accesskey="h">Home</a></li>
+            <li><a href="Parentdashboard.html" accesskey="p">Parent</a></li>
+            <li><a href="Tutor.html" accesskey="t">Tutor</a></li>           
+            <li> 
+              <a href="Administratordashboard.html" accesskey="a">Adminstrator</a>
+            </li>
+            <li><a href="Courses.html" accesskey="c">Courses</a></li>
+         
+            
+         </ul>
+           
+        
+        </div>
+
+      </nav>
+    </section>
+
+   <div class='breadcrumb'>
+      <a href="index.html">Home</a>
+      <span> / </span>
+      <a href="Parentdashboard.html">Parent Dashboard</a>
+      
+    </div>  
+
+<main>
+  <h1>My Kids</h1>
+  <section id="myKids">
+  
+  <div class="kidsPart">
+  <div class="kidblock">
+
+  </div>
+  
+  </div>
+  </section>
+
+
+
+
+<div class="pagesPart">
+
+
+ <section id="section-3">
+       
+           <a href="RegisteraNewChild.html" >  <div class="column1">
+                <img src="images/register.png" alt="Registeration image" class="image">
+                <div class="img-title">
+                    <h2>Register a New Child</h2>
+                </div>
+            </div> </a> 
+ 
+            
+            
+            
+           <a href="Courseenrolment.html" >  <div class="column1">
+                <img src="images/enroll.png" alt="Enrollment image" class="image">
+                <div class="img-title">
+                    <h2>Course Enrollment</h2>
+                </div>
+            </div> </a> 
+            
+ 
+ 
+           <a href="Courseevaluation.html" >  <div class="column1">
+                <img src="images/rating.png" alt="Evaluetion image"  class="image">
+                <div class="img-title">
+                    <h2>Course Evaluation</h2>
+                </div>
+            </div> </a> 
+ 
+            
+       
+ </section>
+ 
+</div>
+</div>
+</main>
+<footer>
+  <section id="footer">
+    <div class="main-footer">
+      <div class="Us">
+        <h2>Why Us?</h2>
+        <ul>
+          <li>Safe enviroment for kids</li>
+          <li>Interactive lerning courses</li>
+          <li>Well qulified instructers</li>
+          <li>Flexible scheduels</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>
+            <a href="mailto:KidsScript@gmail.com"
+              ><img
+                src="images/Email.png"
+                alt="instgram icon"
+                width="20"
+                height="20"
+              >KidsScript@gmail.com</a
+            >
+          </li>
+          <li>
+            <img
+              src="images/phone.png"
+              alt="instgram icon"
+              width="20"
+              height="20"
+            >+966555518694
+          </li>
+        </ul>
+      </div>
+      <div class="Social">
+        <h2>Social Media</h2>
+        <ul>
+          <li>
+            <a href="https://instgram.com"
+              ><img
+                src="images/instgram.png"
+                alt="instgram icon"
+                width="20"
+                height="20"
+              >
+              KidsScript
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com"
+              ><img
+                src="images/X.png"
+                alt="X icon"
+                width="20"
+                height="20"
+              >
+              KidsScript
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com"
+              ><img
+                src="images/Facebook.png"
+                alt="instgram icon"
+                width="20"
+                height="20">
+              KidsScript
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p>
+      Copy right ©2023 made with
+      <img src="images/heart.png" alt="love" width="15" height="15"> in
+      KSU
+    </p>
+  </section>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  if(localStorage.getItem('kidsname') == null){
+    var kidsData = [
+      {name: 'Emma Johnson', kidimg: 'images/Kid3.png'},
+      {name: 'Liam Johnson', kidimg: 'images/Kid4.png'}
+    ];
+    localStorage.setItem('kidsname', JSON.stringify(kidsData));
+  }
+  var storekidsData = JSON.parse(localStorage.getItem('kidsname'));
+  displayKids(storekidsData);
+});
+
+function displayKids(kidsData) {
+  var KidsList = document.querySelector('.kidsPart');
+
+  // Clear the existing children divs
+  KidsList.innerHTML = '';
+
+  kidsData.forEach(function(kid) {
+    var KidDiv = document.createElement('div');
+    KidDiv.classList.add('kidblock');
+    var image = document.createElement('img');
+    image.src = kid.kidimg;
+    image.alt = kid.name;
+    var kidName = document.createElement('h2');
+    kidName.style.textAlign = 'center';
+    kidName.textContent = kid.name;
+
+    KidDiv.appendChild(image);
+    KidDiv.appendChild(kidName);
+    KidsList.appendChild(KidDiv);
+  });
+}
+/*
+ var moon = document.getElementById("moon");
+    moon.onclick=function(){
+      document.body.classList.toggle("dark");
+    }
+ 
+*/
+ 
+  </script>
+      <script src="darkMode.js" defer></script>
+</body>
+
+</html> 
